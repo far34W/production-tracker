@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+  ═══════════════════════════════════════════════════════════════════════
+  IMPORTANT — <base href="..."> CHECK
+  ═══════════════════════════════════════════════════════════════════════
+
+  إلا كنت deployed f root (https://example.com/):
+      <base href="/">          ← هادشي صحيح، ما بدلش walou
+
+  إلا كنت deployed f sub-path (https://example.com/production-tracker/):
+      <base href="/production-tracker/">
+
+  إلا base href ماشي صحيح، sqlite3.wasm w sqflite_sw.js غايولاو 404
+  و غايبان لك نفس error "Unsupported result null (null)".
+
+  Flutter كيكتب had السطر automatically من --base-href flag:
+      flutter build web --base-href "/production-tracker/"
+  ═══════════════════════════════════════════════════════════════════════
+-->
+<html>
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Production Tracker">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="production_tracker">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Production Tracker</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
