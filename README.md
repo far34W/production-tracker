@@ -1,17 +1,61 @@
-# production_tracker
+# Production Tracker
 
-A new Flutter project.
+A Flutter application for tracking and managing production activities. The application allows users to record production data, manage entries, and monitor productivity through a simple and user-friendly interface.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- User authentication
+- Production entry management
+- Dashboard with production statistics
+- Local database support
+- Responsive interface
+- Cross-platform support (Android, Windows, Web)
 
-A few resources to get you started if this is your first Flutter project:
+## Technologies
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Flutter
+- Dart
+- SQLite
+- Provider
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Structure
+
+```
+lib/
+├── models/
+├── providers/
+├── screens/
+├── services/
+├── widgets/
+└── main.dart
+```
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/far34W/production-tracker.git
+```
+
+Go to the project:
+
+```bash
+cd production-tracker
+```
+
+Install dependencies:
+
+```bash
+flutter pub get
+```
+
+Run the project:
+
+```bash
+flutter run
+```
+
+## Author
+
+Zakaria Fartat
